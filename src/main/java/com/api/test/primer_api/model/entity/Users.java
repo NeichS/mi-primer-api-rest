@@ -9,9 +9,11 @@ import java.io.Serializable;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
+@Builder
 @Entity
-@Table(name = "user")
-public class User implements Serializable {
+@Table(name = "users")
+@Getter
+public class Users implements Serializable {
 
     @Id
     @Column(name = "id")
